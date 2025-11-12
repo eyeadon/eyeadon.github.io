@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Evan Yeadon" />
+    <title>Evan Yeadon | Web Apps</title>
+
+    <link rel="icon" href="images/favicon.png" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="fullwidthHeader">
+      <div class="container topHeader">
+        <a href="index.html"
+          ><img src="images/ey_logo.png" class="img-responsive" alt="evan yeadon graffiti logo"
+        /></a>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="web_apps.html">Web Apps</a></li>
+            <li><a href="my_websites.html">Websites</a></li>
+            <li><a href="graphic.html">Graphic Design</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container -->
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <h1>Web Apps</h1>
+
+      <div class="row rowPadding">
+        <div class="col-md-6">
+          <a href="web_apps/whatcha_bringing.html"
+            ><img
+              src="web_apps/whatcha-bringing-home.png"
+              class="img-responsive img-rounded imageBorder"
+              alt="event web form"
+          /></a>
+          <h3>Whatcha Bringing</h3>
+          <p>
+            <a class="btn btn-default" href="web_apps/whatcha_bringing.html" role="button"
+              >View &raquo;</a
+            >
+          </p>
+        </div>
+        <div class="col-md-6">
+          <a href="web_apps/game_hub.html"
+            ><img
+              src="web_apps/game-hub-home.png"
+              class="img-responsive img-rounded imageBorder"
+              alt="game search app"
+          /></a>
+          <h3>Game Hub</h3>
+          <p>
+            <a class="btn btn-default" href="web_apps/game_hub.html" role="button">View &raquo;</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row rowPadding">
+        <div class="col-md-6">
+          <a href="web_apps/issue_tracker.html"
+            ><img
+              src="web_apps/issue-tracker-home.png"
+              class="img-responsive img-rounded imageBorder"
+              alt="graphs showing amount of open bugs / issues"
+          /></a>
+          <h3>Issue Tracker</h3>
+          <p>
+            <a class="btn btn-default" href="web_apps/issue_tracker.html" role="button"
+              >View &raquo;</a
+            >
+          </p>
+        </div>
+        <div class="col-md-6">
+          <a href="web_apps/weather_app.html"
+            ><img
+              src="web_apps/weather-app-home.png"
+              class="img-responsive img-rounded imageBorder"
+              alt="local weather and air quality readings"
+          /></a>
+          <h3>Weather and Air Quality App</h3>
+          <p>
+            <a class="btn btn-default" href="web_apps/weather_app.html" role="button"
+              >View &raquo;</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- /container -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="activeState.js"></script>
+    <script>
+      function setFooterStyle() {
+        var docHeight = $(window).height();
+        var footerHeight = $("#footer").outerHeight();
+        var footerTop = $("#footer").position().top + footerHeight;
+        var marginTop = docHeight - footerTop;
+
+        if (footerTop < docHeight) {
+          $("#footer").css("margin-top", marginTop + "px");
+        } else {
+          $("#footer").css("margin-top", "0");
+        }
+        $("#footer").removeClass("invisible");
+      }
+
+      $(document).ready(function () {
+        setFooterStyle();
+        setTimeout(setFooterStyle, 250);
+
+        window.onresize = setFooterStyle;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Evan Yeadon" />
+    <title>Evan Yeadon | Illustration</title>
+
+    <link rel="icon" href="images/favicon.png" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="fullwidthHeader">
+      <div class="container topHeader">
+        <a href="index.html"
+          ><img src="images/ey_logo.png" class="img-responsive" alt="evan yeadon graffiti logo"
+        /></a>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="web_apps.html">Web Apps</a></li>
+            <li><a href="my_websites.html">Websites</a></li>
+            <li><a href="graphic.html">Graphic Design</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container -->
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <h1>Illustration</h1>
+      <div class="row rowPadding">
+        <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8" style="text-align: center">
+          <a href="illustration/djgirl.png" class="fancybox" rel="group">
+            <img
+              src="illustration/dj_thumb1.jpg"
+              class="img-thumbnail"
+              alt="female DJ with turntables"
+            />
+          </a>
+          <a href="illustration/teamdj.gif" class="fancybox" rel="group">
+            <img
+              src="illustration/dj_thumb2.jpg"
+              class="img-thumbnail"
+              alt="simple outline logo of DJ"
+            />
+          </a>
+          <a href="illustration/jungle.gif" class="fancybox" rel="group">
+            <img
+              src="illustration/dj_thumb3.jpg"
+              class="img-thumbnail"
+              alt="jungle scene with bird and growing trees, vector illustration"
+            />
+          </a>
+          <a href="illustration/djcolor.jpg" class="fancybox" rel="group">
+            <img
+              src="illustration/dj_thumb4.jpg"
+              class="img-thumbnail"
+              alt="DJ in nightclub scene"
+            />
+          </a>
+          <a href="illustration/drummers.png" class="fancybox" rel="group">
+            <img
+              src="illustration/vector_thumb1.jpg"
+              class="img-thumbnail"
+              alt="three snare drummers play on football field"
+            />
+          </a>
+          <a href="illustration/work_life.jpg" class="fancybox" rel="group">
+            <img
+              src="illustration/vector_thumb2.jpg"
+              class="img-thumbnail"
+              alt="man juggles icons of home, money, briefcase"
+            />
+          </a>
+          <a href="illustration/excercise.jpg" class="fancybox" rel="group">
+            <img
+              src="illustration/vector_thumb3.jpg"
+              class="img-thumbnail"
+              alt="man runs past tree"
+            />
+          </a>
+          <a href="illustration/flower1.png" class="fancybox" rel="group">
+            <img
+              src="illustration/flower_thumb1.jpg"
+              class="img-thumbnail"
+              alt="vector illustration of spring flowers"
+            />
+          </a>
+          <a href="illustration/flower2.gif" class="fancybox" rel="group">
+            <img
+              src="illustration/flower_thumb2.jpg"
+              class="img-thumbnail"
+              alt="flower from a beach garden"
+            />
+          </a>
+          <a href="illustration/flower3.gif" class="fancybox" rel="group">
+            <img
+              src="illustration/flower_thumb3.jpg"
+              class="img-thumbnail"
+              alt="flower that looks like a sun with rays"
+            />
+          </a>
+          <a href="illustration/spacial.png" class="fancybox" rel="group">
+            <img
+              src="illustration/spacial_thumb1.jpg"
+              class="img-thumbnail"
+              alt="geometric rectangles moving into vanishing point"
+            />
+          </a>
+          <a href="illustration/squares_b.png" class="fancybox" rel="group">
+            <img
+              src="illustration/squares_thumb1.jpg"
+              class="img-thumbnail"
+              alt="geometric composition"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+    <!-- End Main Content -->
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="activeState.js"></script>
+    <script>
+      function setFooterStyle() {
+        var docHeight = $(window).height();
+        var footerHeight = $("#footer").outerHeight();
+        var footerTop = $("#footer").position().top + footerHeight;
+        var marginTop = docHeight - footerTop;
+
+        if (footerTop < docHeight) {
+          $("#footer").css("margin-top", marginTop + "px");
+        } else {
+          $("#footer").css("margin-top", "0");
+        }
+        $("#footer").removeClass("invisible");
+      }
+
+      $(document).ready(function () {
+        setFooterStyle();
+        setTimeout(setFooterStyle, 250);
+
+        window.onresize = setFooterStyle;
+      });
+    </script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link
+      rel="stylesheet"
+      href="fancybox/source/jquery.fancybox.css?v=2.1.6"
+      type="text/css"
+      media="screen"
+    />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link
+      rel="stylesheet"
+      href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5"
+      type="text/css"
+      media="screen"
+    />
+    <script
+      type="text/javascript"
+      src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"
+    ></script>
+    <script
+      type="text/javascript"
+      src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7"
+      type="text/css"
+      media="screen"
+    />
+    <script
+      type="text/javascript"
+      src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".fancybox").fancybox();
+      });
+    </script>
+  </body>
+</html>
